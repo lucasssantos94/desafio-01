@@ -12,23 +12,23 @@ switch (period) {
         console.log('Está de noite');
         break;
     default:
-        console.log('valor inválido')
+        console.log('valor inválido');
 }
 
 // 02 - Crie um loop for() que exiba apenas números pares até o 20 no console.log()
 console.log(`-----------------------------\nEXERCICIO 02 - Crie um loop for() que exiba apenas números pares até o 20 no console.log()`)
 for (let i = 0; i <= 20; i++) {
     if (i % 2 == 0) {
-        console.log(i)
+        console.log(i);
     }
-}
+};
 
 // 03 - crie uma função que exiba uma mensagem no console
 console.log(`-----------------------------\nEXERCICIO 03 - crie uma função que exiba uma mensagem no console`)
 
 let message = 'Boa tarde';
 function showMessage(msg) {
-    console.log(msg)
+    console.log(msg);
 };
 
 showMessage(message);
@@ -60,16 +60,15 @@ function showMedia(movie, music) {
     console.log(`Filme: ${movie} \nMusica: ${music}`)
 };
 
-showMedia('O protetor', 'Dear Mama')
+showMedia('O protetor', 'Dear Mama');
 
 
 // 07 - crie uma função que retorne o triplo do número recebido no parâmetro da função
 
 console.log(`-----------------------------\nEXERCICIO 07 - crie uma função que retorne o triplo do número recebido no parâmetro da função`)
-function tripleValue(number = 0) {
-    return number * 3
-};
-console.log(tripleValue(9));
+const tripleValue = (number = 0) => number * 3;
+
+console.log(tripleValue(10));
 
 
 // 08 - crie uma função que  verifique se uma  variável é true ou false
@@ -91,36 +90,35 @@ checkValue(value);
 // 09 - Crie um array que receba 5 itens e exiba no console.
 console.log(`-----------------------------\nEXERCICIO 09 - Crie um array que receba 5 itens e exiba no console.`)
 let arr = [1, 2, 3, 4, 5];
-console.log(arr)
+console.log(arr);
 
 
 // 10 - Utilize um método para adicionar um nome ao inicio do array.
 console.log(`-----------------------------\nEXERCICIO 10 - Utilize um método para adicionar um nome ao inicio do array.`)
-arr.unshift(0)
-console.log(arr)
+arr.unshift(0);
+console.log(arr);
 
 // 11 - Utilize um método para remover o último nome do array.
 console.log(`-----------------------------\nEXERCICIO 11 - Utilize um método para remover o último nome do array.`)
-arr.pop()
-console.log(arr)
+arr.pop();
+console.log(arr);
 
 let nomes = ["João", "Maria", "Jose", "Pedro"];
 
 // 12 - Utilize um método para adicionar dois nomes ao fim do array.
 console.log(`-----------------------------\nEXERCICIO 12 - Utilize um método para adicionar dois nomes ao fim do array.`)
 nomes.splice(4, 0, 'Vinicius', 'Fernanda')
-console.log(nomes)
-
+console.log(nomes);
 // 13 - Utilize um método para remover o primeiro nome do array.
 console.log(`-----------------------------\nEXERCICIO 13 - Utilize um método para remover o primeiro nome do array.`)
-nomes.shift()
-console.log(nomes)
+nomes.shift();
+console.log(nomes);
 
 // 14 - Utilize um método para adicionar no meio deste array.
 console.log(`-----------------------------\nEXERCICIO 14 - Utilize um método para adicionar no meio deste array.`)
 
-nomes.splice(2, 0, 'Lucas');
-console.log(nomes)
+nomes.splice(3, 0, 'Lucas');
+console.log(nomes);
 
 // 15 - Utilize um método para organizar em ordem crescente o seguinte array:
 console.log(`-----------------------------\nEXERCICIO 15 - Utilize um método para organizar em ordem crescente o seguinte array:`)
@@ -128,4 +126,4 @@ console.log(`-----------------------------\nEXERCICIO 15 - Utilize um método pa
 let numbers = [7, 5, 6, 3, 8, 9, 2, 1, 4];
 
 numbers.sort();
-console.log(numbers)
+console.log(numbers);
